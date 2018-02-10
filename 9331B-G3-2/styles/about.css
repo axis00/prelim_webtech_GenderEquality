@@ -1,0 +1,164 @@
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: News Cycle url('./Fonts/NewsCycle-Regular.ttf');
+  color: #FFFFFF;
+  background: transparent url(../images/6.jpg) repeat;  
+}
+
+p
+{ padding: 0 0 10px 0;
+  line-height: 1.7em;
+  font-size: 100%;
+  text-indent: 50px;
+  text-justify: auto;
+  font: normal 100% 'News Cycle', arial, sans-serif;
+  }
+
+img
+{ border: 0;}
+
+h1
+{ font: normal 225% 'News Cycle', arial, sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+  letter-spacing: -1px;
+  margin: 0 0 10px 0;
+  }
+
+h3
+{ font: bold 130% 'News Cycle', arial, sans-serif;
+  color: #FFFFFF;
+ }
+
+ul
+{ margin: 2px 0 22px 30px;
+  line-height: 1.7em;
+  font-style: bold;
+  font-size: 100%;}
+
+#main, #header, #banner, #menubar, #site_content, #footer
+{ margin-left: auto; 
+  margin-right: auto;}
+
+#main
+{ background: transparent;}
+  
+header #heading
+{ height: 80px
+   float: left;
+}
+
+.logo{
+    float: left;
+}
+
+#banner
+{ width: 2000px;
+  position: relative;
+  height: 90px;
+  padding: 15px 0 0 0;
+  background: transparent;}
+
+#welcome
+{ width: 500px;
+  float: left;
+  height: 50px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 5px;
+  background: transparent;}   
+   
+#welcome H1
+{ font: normal 250% 'News Cycle', arial, sans-serif;
+  letter-spacing: -3px;
+  color: #000000;}
+  
+#menu_container
+{ height: 100px;}  
+  
+#menubar
+{ width: 700px;
+  height: 60px;
+  float: right;
+  margin: 0 auto;} 
+  
+ul#menu
+{ margin:0;}
+
+ul#menu li
+{ padding: 0 0 0 0px;
+  list-style: none;
+  margin: 2px 0 0 0;
+  display: inline;
+  background: transparent;}
+
+ul#menu li a
+{ float: left;
+  font: bold 130% 'News Cycle', arial, sans-serif;
+  height: 24px;
+  margin: 10px 0 0 20px;
+  padding: 6px 10px 0 10px;
+  background: transparent; 
+  text-align: center;
+  color: #000000;
+  text-decoration: none;} 
+
+#site_content
+{ width: 920px;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  background: transparent url(../images/transparent.png) repeat;} 
+
+#content
+{ width: 900px;
+  float: left;}
+  
+.content_item
+{ width: 900px;
+  margin-bottom: 10px;}
+
+.container
+{ float: left;
+  width: 900px;}  
+  
+.vision
+{ width: 385px;
+  float: left;
+  padding: 20px;
+  background: #999999;
+  color: #000000;}
+  
+.vision h3
+ { color: #000;
+ }  
+  
+.mission
+{ width:  385px;
+  margin-left: 26px;  
+  float: left;
+  padding: 20px;
+  background: #999999;
+  color: #000000;}  
+  
+.mission h3
+ { color: #000;
+  }  
+ 
+#footer
+{ width: 940px;
+  height: 40px.;
+  font-weight: normal;
+  padding-top: 15px;
+  text-align: right; 
+  background: transparent;
+  color: #000000;}
+
+
+  
