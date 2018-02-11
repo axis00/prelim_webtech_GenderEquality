@@ -1,3 +1,15 @@
+@font-face { 
+	font-family: Jenna Sue; 
+		src: url('JennaSue-webfont.eot'); 
+		src: local("Jenna Sue"), url('./Fonts/JennaSue-webfont.ttf'); 
+} 
+
+@font-face { 
+	font-family: News Cycle; 
+		src: url('NewsCycle-Regular.eot'); 
+		src: local("News Cycle"), url('./Fonts/NewsCycle-Regular.ttf'); 
+} 
+
 * {
     padding: 0;
     margin: 0;
@@ -35,11 +47,12 @@ body {
 /* Header */
 
 header {
-    background: transparent;
-    color: #000000;
+    color: #e8491d;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #35424A 3px solid;
+	background: #35424A;
+	border-bottom: #e8491d 5px solid;
+	font-family:News Cycle;
 }
 
 header #heading {
@@ -70,11 +83,10 @@ header ul li {
 }
 
 header li a {
-    color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-	font-weight: bold
 }
 
 header .highlight,
@@ -84,8 +96,7 @@ header .current a {
 }
 
 header a:hover {
-    color: #cccccc;
-    font-weight: bold;
+    color: #e8491d;
 }
 
 /* Slide Show*/
@@ -209,5 +220,6 @@ footer {
     color: white;
     background-color: #35424A;
     text-align: center;
+	border-top: #e8491d 5px solid;
 }
 
