@@ -100,7 +100,8 @@ header #heading {
 	position: relative;
 	height: 90px;
 	padding: 15px 0 0 0;
-	background: transparent;
+	border-bottom: #e8491d 3px solid;
+
 }
 
 #welcome { 
@@ -110,13 +111,12 @@ header #heading {
 	margin: 0 auto;
 	padding-left: 160px;
 	padding-top: 5px;
-	background: transparent;
 }   
    
 #welcome H1  { 
 	font: normal 200% 'Jenna Sue', arial, sans-serif;
 	letter-spacing: 3px;
-	color: #000000;
+	color: #e8491d;
 }
   
 #menu_container { 
@@ -145,19 +145,18 @@ ul#menu li {
 
 ul#menu li a {
 	float: left;
-	font: bold 130% 'News Cycle', arial, sans-serif;
+	font: normal 130% 'News Cycle', arial, sans-serif;
 	height: 50px;
 	margin: 10px 0 0 20px;
 	padding: 6px 10px 0 10px;
 	background: transparent; 
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	text-decoration: none;
 } 
   
 ul#menu li a:hover {
-	color: #9966cc;
-	font-weight: bold;
+	color: #e8491d;
 }
 
 #site_content{
@@ -215,17 +214,19 @@ ul#menu li a:hover {
   
 .mission h3 { 
 	color: #000;
-}  
+}   
  
 #footer { 
-	width: 940px;
-	height: 40px.;
+	width: 1300px;
+	height: 90px.;
 	font-weight: normal; 
-	background: transparent;
-	color: #000000;
+	background-color: #35424A;
+	color: #FFFFFF;
     clear: both;
     padding: 20px;
     margin-top: 20px;
     text-align: center;
+	border-top: #e8491d 5px solid;
 }
   
+
