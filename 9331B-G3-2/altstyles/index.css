@@ -23,7 +23,9 @@ html {
 }
 
 h1{
-    font-size: 20px;
+    position: relative;
+    bottom: 25px;
+    font-size: 30px;
     color: darkseagreen;
     float:left;
     padding-left: 30px;
@@ -52,33 +54,33 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 nav{
     float: right;
-    height: 5%;
+    height: 10%;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: 5a6d8e;
 }
 
 li {
+    position: relative;
     float: left;
+    z-index: 101;
 }
 
 li a {
     display: block;
     color: darkseagreen;
-    text-align: center;
+    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
     font-size: 50px;
-    transition: .4s ease-out;
+    transition: .3s ease-out;
 }
 
 section {
@@ -93,6 +95,7 @@ section {
 #slideshow {
     padding-top: 50px;
     min-height: 300px;
+    width: inherit;
     color: white;
     text-align: center;
 	border-bottom: #35424A 3px solid;
@@ -102,9 +105,10 @@ section {
 .slide-container{
     margin: 0 auto;
     position: relative;
-    width: 100%;
+    width: 85%;
     height: inherit;
     padding-bottom: 60%;
+    background-color: darkslategrey;
 }
 
 .slide-img{
@@ -159,7 +163,7 @@ section {
     position: relative;
     border-radius: 50%;
     display: inline-block;
-    background: darkseagreen;
+    background: darkslategrey;
 }
 
 .slide-img{
@@ -198,5 +202,45 @@ section {
 
 #contact {
     height: 100px;
-    background-color: aqua;
 }
+
+#contact .box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#contact .box img {
+    width: 100px;
+}
+
+#contact .box img:hover {
+    -webkit-animation: rotation 2s infinite
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+footer {
+    width: 90%;
+    clear: both;
+    padding: 20px;
+    margin-top: 20p;
+    color: black;
+    text-align: right;
+}
+
