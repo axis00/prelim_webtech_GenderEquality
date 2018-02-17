@@ -1,0 +1,283 @@
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body { 
+	font: normal .85em arial, sans-serif;
+	color: #FFFFFF;
+	background: transparent url(../images/bg.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	margin: 0 0 15px 0;
+	padding: 15px 0 5px 0;
+	padding-bottom: 40px;
+}
+
+p { 
+	padding: 0 0 10px 0;
+	line-height: 1.7em;
+	font-size: 100%;
+	text-indent: 50px;
+	text-justify: auto;
+	font: normal 1.3em "News Cycle", arial, sans-serif;
+	padding: 0 0 20px 0;
+	line-height: 1.5em;
+}
+ 
+h1, h3 { 
+	font: normal 400% 'Jenna Sue', arial, sans-serif;
+	color: #FFFFFF;
+	margin: 0 0 15px 0;
+	padding: 15px 0 5px 0;
+}
+
+img.fl {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 400px;
+}
+
+img:hover {
+	transform: scale(0.9);/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+h1 { 
+	font: normal 225% 'News Cycle', arial, sans-serif;
+	text-align: center;
+	color: #FFFFFF;
+	letter-spacing: -1px;
+	margin: 0 0 10px 0;	
+}
+
+h3 { 
+	font: normal 200% 'trebuchet ms', arial, sans-serif;
+}
+
+ul { 
+	margin: 2px 0 22px 30px;
+	line-height: 1.7em;
+	font-style: bold;
+	font-size: 100%;
+}
+
+#main, #header, #banner, #menubar, #site_content, #footer { 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+#main  { 
+	background: transparent;
+}
+  
+header #heading { 
+	height: 80px;
+	float: left;
+}
+
+.logo {
+	display: block;
+	position: absolute;
+	top: 17%;
+	left: 8%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+#banner{ 
+	width: 1330px;
+	position: relative;
+	height: 150px;
+	padding: 15px 0 0 0;
+	border-bottom: #660000 3px solid;
+	background: transparent url(../images/transparent.png) repeat;
+}
+
+#welcome { 
+	width: 500px;
+	float: left;
+	height: 50px;
+	margin: 0 auto;
+	padding-left: 160px;
+	padding-top: 5px;
+}   
+   
+#welcome H1  { 
+	font: normal 300% "Courier New", Courier, monospace;
+	letter-spacing: 3px;
+	color: #B8860B;
+}
+
+#welcome h1:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+#welcome h1:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+  
+#menu_container { 
+	height: 50px;
+}  
+  
+#menubar { 
+	width: 630px;
+	height: 50px;
+	float: right;
+	margin: 0 auto;
+} 
+  
+ul#menu {
+	margin:0;
+	padding-top: 50px;
+}
+
+ul#menu li { 
+	padding: 0 0 0 1px;
+	list-style: none;
+	margin: 2px 0 0 0;
+	display: inline;
+	background: transparent;
+}
+
+ul#menu li a {
+	float: left;
+	font: normal 130% 'News Cycle', arial, sans-serif;
+	height: 50px;
+	margin: 5px 0 0 20px;
+	padding: 3px 5px 0 5px;
+	background: transparent; 
+	text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+} 
+  
+ul#menu li a:hover {
+	color: #B8860B;
+	font-size: 30px;
+    transition: .3s ease-out;
+}
+
+#site_content{
+	width: 95%;
+	overflow: hidden;
+	padding-left: 40px;
+	padding-bottom: 20px;
+	background: transparent url(../images/transparent.png) repeat;
+    margin: 2% auto;
+	text-align: justify;
+} 
+
+#content{
+	width: 100%;
+	float: left;
+}
+  
+.content_item
+{
+	width: 50%;
+	margin-bottom: 10px;
+}
+
+.container {
+	float: right;
+	width: 20%;
+	position: absolute;
+	top: 85%;
+	left: 80%;
+	margin-right: 0%;
+	transform: translate(-50%, -50%);
+}  
+  
+.vision { 
+	width: 385px;
+	background: transparent ;
+	color: #FFFFFF;
+	float: right;
+	margin: 0 0 17px 0;
+	padding: 20px 15px 5px 13px;
+}
+  
+.vision h3 {
+	color: #FFFFFF;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+		typing 3.5s steps(40, end),
+		blink-caret .75s step-end infinite;
+}  
+ 
+.vision:hover {
+	transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.mission:hover {
+	transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+  
+.mission {
+	width:  385px;
+	margin-left: 26px;
+	background: transparent;
+	color: #FFFFFF;
+	float: right;
+	margin: 0 0 17px 0;
+	padding: 20px 15px 5px 13px;
+}  
+  
+.mission h3 { 
+	color: #FFFFFF;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+		typing 3.5s steps(40, end),
+		blink-caret .75s step-end infinite;
+}   
+ 
+#footer { 
+	width: 1280px;
+	height: 90px.;
+	font-weight: normal; 
+	background: transparent url(../images/transparent.png) repeat;
+	color: #FFFFFF;
+    clear: both;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+	border-top: #660000 5px solid;
+}
