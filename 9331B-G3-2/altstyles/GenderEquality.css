@@ -119,11 +119,11 @@ section {
 }
 
 #pineTree{
-    margin: auto;
     width: 80%;
+    left: 10%;
+    right: 10%;
     position:absolute;
     top: 1000px;
-    right: 200px;
     opacity: 0.5;
 }
 
@@ -134,32 +134,92 @@ section {
     opacity: 0.8;
     position: absolute;
     left: 10%;
-    right: 10%
+    right: 10%;
+}
+
+#equality:hover{
+    width:90%;
+    left: 5%;
+    right:5%;
+    opacity: 1;
+    transition-delay: 0.8s ease-out;
 }
 
 #boy{
     width:40%;
+    height: 500px;
+    position: relative;
+    top: -150px;
     background-color: aqua;
     margin-right: 10%;
     margin-left: 50%;
+    opacity: 0.5;
 }
+
+#boy:hover{
+    opacity: 1;
+}
+
 
 #girl{
     width: 40%;
+    height: 500px;
+    position: relative;
+    top: 350px;
     background-color: pink;
     margin-left: 10%;
     margin-right: 50%;
+    opacity: 0.5;
 }
+
+#girl:hover{
+    opacity: 1;
+}
+
 
 #girl img{
     width: 400px;
+    position: relative;
+    bottom: 100px;
     float: center;
 }
 
 #boy img{
     width: 350px;
+    position: relative;
+    top: 20px;
     float: center;
 }
+
+#title h1{
+    position: relative;
+    margin-left: 10%;
+    top: 10px;
+    font-family:cursive;
+    color: forestgreen;
+    font-size: 70px;
+}
+
+#content{
+    position: relative;
+    width: 50%;
+    left: 15%;
+    font-size: 25px;
+    color: darkslategrey;
+    font-family:sans-serif
+}
+
+#pictures{
+    position: relative;
+    width: 60%;
+    left:20%;
+    right: 20%;
+}
+
 .tiles {
-    height: 200px;
+    height: 150px;
+}
+
+#footer{
+    float: right;
 }
